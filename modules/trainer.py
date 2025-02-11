@@ -1,3 +1,4 @@
+#trainer_lz
 #!/usr/bin/env python3
 # This file is covered by the LICENSE file in the root of this project.
 import datetime
@@ -41,7 +42,7 @@ class Trainer():
         self.datadir = datadir
         self.log = logdir
         self.path = path
-
+        print(self.DATA)
         self.batch_time_t = AverageMeter()
         self.data_time_t = AverageMeter()
         self.batch_time_e = AverageMeter()
@@ -387,9 +388,12 @@ class Trainer():
         end = time.time()
         for i, (in_vol, proj_mask, proj_labels, _, path_seq, path_name, _, _, _, _, _, _, _, _, _) in tqdm(enumerate(train_loader), total=len(train_loader)):
             # measure data loading time
+            #print(torch.max(in_vol[0,4,:,:]),torch.min(in_vol[0,4,:,:]))
+            #print(torch.max(proj_labels[0,:,:]),torch.min(proj_labels[0,:,:]))
             self.data_time_t.update(time.time() - end)
             if not self.multi_gpu and self.gpu:
                 in_vol = in_vol.cuda()
+                #print('HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!',in_vol.shape) #Nirashaa Gon
             if self.gpu:
                 proj_labels = proj_labels.cuda().long()
 
@@ -516,7 +520,13 @@ class Trainer():
         jaccs = AverageMeter()
         wces = AverageMeter()
         acc = AverageMeter()
+        
+        precision_m = AverageMeter()
+        recall_m = AverageMeter()
+        f1_score_m = AverageMeter()
+        
         iou = AverageMeter()
+        
         rand_imgs = []
 
         # switch to evaluate mode
@@ -570,15 +580,20 @@ class Trainer():
                                                gt_np,
                                                color_fn)
                     rand_imgs.append(out)
-
+                print("==========================TIME:",time.time() - end, i,"==========================")
                 # measure elapsed time
                 self.batch_time_e.update(time.time() - end)
                 end = time.time()
 
             accuracy = evaluator.getacc()
+            precision, recall, f1_score=evaluator.get_metrics()
             jaccard, class_jaccard = evaluator.getIoU()
             acc.update(accuracy.item(), in_vol.size(0))
             iou.update(jaccard.item(), in_vol.size(0))
+            
+            precision_m.update(precision.item(), in_vol.size(0))
+            recall_m.update(recall.item(), in_vol.size(0))
+            f1_score_m.update(f1_score.item(), in_vol.size(0))
 
             print('Validation set:\n'
                   'Time avg per batch {batch_time.avg:.3f}\n'
@@ -586,23 +601,35 @@ class Trainer():
                   'Jaccard avg {jac.avg:.4f}\n'
                   'WCE avg {wces.avg:.4f}\n'
                   'Acc avg {acc.avg:.3f}\n'
-                  'IoU avg {iou.avg:.3f}'.format(batch_time=self.batch_time_e,
+                  'IoU avg {iou.avg:.3f}\n'
+                  'Pre avg {precision_m.avg:.3f}\n'
+                  'Rec avg {recall_m.avg:.3f}\n'
+                  'F1 avg {f1_score_m.avg:.3f}'
+                  
+                  .format(batch_time=self.batch_time_e,
                                                  loss=losses,
                                                  jac=jaccs,
                                                  wces=wces,
-                                                 acc=acc, iou=iou))
+                                                 acc=acc, iou=iou,
+                                                 precision_m=precision_m,recall_m=recall_m,f1_score_m=f1_score_m))
 
             save_to_log(self.log, 'log.txt', 'Validation set:\n'
-                                             'Time avg per batch {batch_time.avg:.3f}\n'
-                                             'Loss avg {loss.avg:.4f}\n'
-                                             'Jaccard avg {jac.avg:.4f}\n'
-                                             'WCE avg {wces.avg:.4f}\n'
-                                             'Acc avg {acc.avg:.3f}\n'
-                                             'IoU avg {iou.avg:.3f}'.format(batch_time=self.batch_time_e,
-                                                                            loss=losses,
-                                                                            jac=jaccs,
-                                                                            wces=wces,
-                                                                            acc=acc, iou=iou))
+                                              'Time avg per batch {batch_time.avg:.3f}\n'
+                                              'Loss avg {loss.avg:.4f}\n'
+                                              'Jaccard avg {jac.avg:.4f}\n'
+                                              'WCE avg {wces.avg:.4f}\n'
+                                              'Acc avg {acc.avg:.3f}\n'
+                                              'IoU avg {iou.avg:.3f}\n'
+                                              'Pre avg {precision_m.avg:.3f}\n'
+                                              'Rec avg {recall_m.avg:.3f}\n'
+                                              'F1 avg {f1_score_m.avg:.3f}'.format(batch_time=self.batch_time_e,
+                                                                             loss=losses,
+                                                                             jac=jaccs,
+                                                                             wces=wces,
+                                                                             acc=acc, iou=iou,
+                                                                            precision_m=precision_m,
+                                                                            recall_m=recall_m,
+                                                                            f1_score_m=f1_score_m))
             # print also classwise
             for i, jacc in enumerate(class_jaccard):
                 print('IoU class {i:} [{class_str:}] = {jacc:.3f}'.format(

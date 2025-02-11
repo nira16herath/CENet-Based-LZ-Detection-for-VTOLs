@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import cv2
+import opencv as cv2
 import numpy as np
 def one_hot(label, n_classes, requires_grad=True):
     """Return One Hot Label"""

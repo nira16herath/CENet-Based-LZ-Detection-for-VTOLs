@@ -1,3 +1,4 @@
+#ioueval - lz
 #!/usr/bin/env python3
 
 # This file is covered by the LICENSE file in the root of this project.
@@ -81,3 +82,22 @@ class iouEval:
         total = tp[self.include].sum() + fp[self.include].sum() + 1e-15
         acc_mean = total_tp / total
         return acc_mean  # returns "acc mean"
+
+    def get_metrics(self):
+        
+        tp, fp, fn = self.getStats()
+        
+        precision = tp / (tp + fp + 1e-15)
+        recall = tp / (tp + fn + 1e-15)
+        f1 = 2 * (precision * recall) / (precision + recall + 1e-15)
+        
+        #print(precision, recall, f1)
+        
+        # Calculate mean metrics for included classes
+        precision_mean = precision[self.include].mean()
+        recall_mean = recall[self.include].mean()
+        f1_mean = f1[self.include].mean()
+
+        #print(precision_mean,recall_mean,f1_mean)
+        
+        return precision_mean,recall_mean,f1_mean#precision, recall, f1

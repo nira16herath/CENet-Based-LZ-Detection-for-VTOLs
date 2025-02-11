@@ -30,8 +30,10 @@ if __name__ == '__main__':
     parser.add_argument(
         '--dataset', '-d',
         type=str,
-        required=True,
-        default=None,
+        required=False,
+        #default="/home/tdasun94/Nirasha/original/dataset",   #nirasha
+        #default="/home/tdasun94/Nirasha/Nirasha_lz/bin_and_label_files/sequences_lighthouse_bell",      #my kitti from map
+        default="/home/tdasun94/Nirasha/Nirasha_lz/bin_and_label_files", #for holyrood_paradise
         help='Dataset to train with. No Default',
     )
     parser.add_argument(
@@ -57,7 +59,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--name', '-n',
         type=str,
-        default=None,
+        default="test",
         help='If you want to give an aditional discriptive name'
     )
     parser.add_argument(
@@ -69,6 +71,7 @@ if __name__ == '__main__':
     )
 
     FLAGS, unparsed = parser.parse_known_args()
+    print(FLAGS.log,FLAGS.name)
     FLAGS.log = FLAGS.log + '/' + FLAGS.name
     # print summary of what we will do
     print("----------")

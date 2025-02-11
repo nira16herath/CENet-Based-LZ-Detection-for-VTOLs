@@ -14,8 +14,8 @@ class LaserScan:
 
     def __init__(self, project=False, H=64, W=1024, fov_up=3.0, fov_down=-25.0,DA=False,flip_sign=False,rot=False,drop_points=False):
         self.project = project
-        self.proj_H = 300#H
-        self.proj_W = 300#W
+        self.proj_H = H
+        self.proj_W = W
         self.proj_fov_up = 8
         self.proj_fov_down = 6.0
         self.DA = DA
@@ -57,7 +57,6 @@ class LaserScan:
         # mask containing for each pixel, if it contains a point or not
         self.proj_mask = np.zeros((self.proj_H, self.proj_W),
                                   dtype=np.int32)  # [H,W] mask
-        print(self.proj_H, self.proj_W)
 
     def size(self):
         """ Return the size of the point cloud. """
@@ -223,38 +222,46 @@ class LaserScan:
       self.proj_idx[proj_y, proj_x] = indices
       self.proj_mask = (self.proj_idx > 0).astype(np.float32)
     
-    def do_range_projection(self,img_size=300):
+    def do_range_projection(self):
         """ Project a pointcloud into a spherical projection image.projection.
             Function takes no arguments because it can be also called externally
             if the value of the constructor was not set (in case you change your
             mind about wanting the projection)
         """
+        # laser parameters
+        fov_up = self.proj_fov_up / 180.0 * np.pi  # field of view up in rad
+        fov_down = self.proj_fov_down / 180.0 * np.pi  # field of view down in rad
+        fov = abs(fov_down) + abs(fov_up)  # get field of view total in rad
+
         # get depth of all points
         depth = np.linalg.norm(self.points, 2, axis=1)
 
         # get scan components
-        points=self.points
-        
-        x = points[:, 0]
-        y = points[:, 1]
-        z = points[:, 2]
+        scan_x = self.points[:, 0]
+        scan_y = self.points[:, 1]
+        scan_z = self.points[:, 2]
 
+        # get angles of all points
+        yaw = -np.arctan2(scan_y, scan_x)
+        pitch = np.arcsin(scan_z / depth)
 
-            # get angles of all points
-        # Normalize x, y for image dimensions
-        x_normalized = (x - np.min(x)) / (np.max(x) - np.min(x))
-        y_normalized = (y - np.min(y)) / (np.max(y) - np.min(y))
+        # get projections in image coords
+        proj_x = 0.5 * (yaw / np.pi + 1.0)  # in [0.0, 1.0]
+        proj_y = 1.0 - (pitch + abs(fov_down)) / fov  # in [0.0, 1.0]
 
-        # Convert to image coordinates
-         # Image size
-        x_img = np.int32(x_normalized * (img_size - 1))
-        y_img = np.int32(y_normalized * (img_size - 1))
+        # scale to image size using angular resolution
+        proj_x *= self.proj_W  # in [0.0, W]
+        proj_y *= self.proj_H  # in [0.0, H]
 
-        proj_y = y_img
-        proj_x = x_img   
-
-
+        # round and clamp for use as index
+        proj_x = np.floor(proj_x)
+        proj_x = np.minimum(self.proj_W - 1, proj_x)
+        proj_x = np.maximum(0, proj_x).astype(np.int32)  # in [0,W-1]
         self.proj_x = np.copy(proj_x)  # store a copy in orig order
+
+        proj_y = np.floor(proj_y)
+        proj_y = np.minimum(self.proj_H - 1, proj_y)
+        proj_y = np.maximum(0, proj_y).astype(np.int32)  # in [0,H-1]
         self.proj_y = np.copy(proj_y)  # stope a copy in original order
 
         # copy of depth in original order
@@ -269,9 +276,7 @@ class LaserScan:
         remission = self.remissions[order]
         proj_y = proj_y[order]
         proj_x = proj_x[order]
-        
-        print(np.min(proj_y),np.max(proj_y))
-        print(np.min(proj_x),np.max(proj_x))
+
         # assing to images
         self.proj_range[proj_y, proj_x] = depth
         self.proj_xyz[proj_y, proj_x] = points

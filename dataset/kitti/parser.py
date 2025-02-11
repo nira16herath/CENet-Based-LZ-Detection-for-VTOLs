@@ -87,7 +87,7 @@ class SemanticKitti(Dataset):
                                         dtype=torch.float)
     self.sensor_fov_up = sensor["fov_up"]
     self.sensor_fov_down = sensor["fov_down"]
-    self.max_points = max_points
+    self.max_points = 8932095  #8932095 only hk #2616944 -hk+amt
     self.gt = gt
     self.transform = transform
 
@@ -102,7 +102,7 @@ class SemanticKitti(Dataset):
     if os.path.isdir(self.root):
       print("Sequences folder exists! Using sequences from %s" % self.root)
     else:
-      raise ValueError("Sequences folder doesn't exist! Exiting...")
+      raise ValueError("Sequences folder doesn't exist! Exiting...",self.root)
 
     # make sure labels is a dict
     assert(isinstance(self.labels, dict))
@@ -317,7 +317,7 @@ class Parser():
     self.learning_map = learning_map
     self.learning_map_inv = learning_map_inv
     self.sensor = sensor
-    self.max_points = max_points
+    self.max_points = 8932095
     self.batch_size = batch_size
     self.workers = workers
     self.gt = gt

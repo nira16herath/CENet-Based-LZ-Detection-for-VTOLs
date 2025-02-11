@@ -8,11 +8,11 @@ train:
   aux_loss: True
   lamda: 1.0
   scheduler: "consine"  # "consine" or "decay"
-  max_epochs: 100
+  max_epochs: 100 #nira
   consine:
     min_lr: 0.0001
     max_lr: 0.01
-    first_cycle: 50
+    first_cycle: 50 #nira
     cycle: 1
     wup_epochs: 1
     gamma: 1.0
@@ -59,11 +59,11 @@ dataset:
   sensor:
     name: "HDL64"
     type: "spherical" # projective
-    fov_up: 3
-    fov_down: -25
+    fov_up: 8 #3 nira
+    fov_down: 6 #-25 nira
     img_prop:
-      width: 512
-      height: 64
+      width: 1024 #512 nira
+      height: 128 #64 nira
     img_means: #range,x,y,z,signal
       - 11.71279
       - -0.1023471
