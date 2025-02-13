@@ -22,6 +22,7 @@ class LaserScan:
         self.flip_sign = flip_sign
         self.rot = rot
         self.drop_points = drop_points
+        #print("self.drop_points:",self.drop_points)
 
         self.reset()
 
@@ -57,7 +58,7 @@ class LaserScan:
         # mask containing for each pixel, if it contains a point or not
         self.proj_mask = np.zeros((self.proj_H, self.proj_W),
                                   dtype=np.int32)  # [H,W] mask
-        print(self.proj_H, self.proj_W)
+        #print(self.proj_H, self.proj_W)
 
     def size(self):
         """ Return the size of the point cloud. """
@@ -84,7 +85,8 @@ class LaserScan:
         # if all goes well, open pointcloud
         scan = np.fromfile(filename, dtype=np.float32)
         scan = scan.reshape((-1, 4))
-        print('NIRA',filename)
+        
+        #print('NIRA',filename)
 
         # put in attribute
         points = scan[:, 0:3]  # get xyz
@@ -93,7 +95,9 @@ class LaserScan:
             self.points_to_drop = np.random.randint(0, len(points)-1,int(len(points)*self.drop_points))
             points = np.delete(points,self.points_to_drop,axis=0)
             remissions = np.delete(remissions,self.points_to_drop)
-
+        
+            #print('scan:',scan.shape,filename)
+        
         self.set_points(points, remissions)
 
     def set_points(self, points, remissions=None):
@@ -270,8 +274,8 @@ class LaserScan:
         proj_y = proj_y[order]
         proj_x = proj_x[order]
         
-        print(np.min(proj_y),np.max(proj_y))
-        print(np.min(proj_x),np.max(proj_x))
+        #print(np.min(proj_y),np.max(proj_y))
+        #print(np.min(proj_x),np.max(proj_x))
         # assing to images
         self.proj_range[proj_y, proj_x] = depth
         self.proj_xyz[proj_y, proj_x] = points
@@ -363,27 +367,31 @@ class SemLaserScan(LaserScan):
 
     def reset(self):
         """ Reset scan members. """
+        
         super(SemLaserScan, self).reset()
+        
 
         # semantic labels
         self.sem_label = np.zeros((0, 1), dtype=np.int32)  # [m, 1]: label
         self.sem_label_color = np.zeros((0, 3), dtype=np.float32)  # [m ,3]: color
-
+        
         # instance labels
         self.inst_label = np.zeros((0, 1), dtype=np.int32)  # [m, 1]: label
         self.inst_label_color = np.zeros((0, 3), dtype=np.float32)  # [m ,3]: color
 
         # projection color with semantic labels
+        
         self.proj_sem_label = np.zeros((self.proj_H, self.proj_W),
                                        dtype=np.int32)  # [H,W]  label
         self.proj_sem_color = np.zeros((self.proj_H, self.proj_W, 3),
-                                       dtype=np.float)  # [H,W,3] color
+                                       dtype=np.float32)  # [H,W,3] color
+        #print("CALLED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!dsadsa!!!!!!!!!!!!")
 
         # projection color with instance labels
-        self.proj_inst_label = np.zeros((self.proj_H, self.proj_W),
-                                        dtype=np.int32)  # [H,W]  label
-        self.proj_inst_color = np.zeros((self.proj_H, self.proj_W, 3),
-                                        dtype=np.float)  # [H,W,3] color
+        #self.proj_inst_label = np.zeros((self.proj_H, self.proj_W),
+        #                                dtype=np.int32)  # [H,W]  label
+        #self.proj_inst_color = np.zeros((self.proj_H, self.proj_W, 3),
+        #                                dtype=np.float64)  # [H,W,3] color
 
     def open_label(self, filename):
         """ Open raw scan and fill in attributes
@@ -399,12 +407,15 @@ class SemLaserScan(LaserScan):
 
         # if all goes well, open label
         label = np.fromfile(filename, dtype=np.int32)
+        #print(np.unique(label),label.shape)
         label = label.reshape((-1))
-        print('NIRA',filename)
+        
+        #print('NIRA',filename)
 
         if self.drop_points is not False:
             label = np.delete(label,self.points_to_drop)
         # set it
+            #print('label:',label.shape,filename)
         self.set_label(label)
 
     def set_label(self, label):
@@ -416,12 +427,13 @@ class SemLaserScan(LaserScan):
 
         # only fill in attribute if the right size
         if label.shape[0] == self.points.shape[0]:
-            self.sem_label = label & 0xFFFF  # semantic label in lower half
-            self.inst_label = label >> 16  # instance id in upper half
+            self.sem_label = label #& 0xFFFF  # semantic label in lower half
+            #self.inst_label = label >> 16  # instance id in upper half
         else:
-            print("Points shape: ", self.points.shape)
-            print("Label shape: ", label.shape)
-            raise ValueError("Scan and Label don't contain same number of points")
+            self.sem_label = label
+            #print("Points shape: ", self.points.shape)
+            #print("Label shape: ", label.shape)
+            #raise ValueError("Scan and Label don't contain same number of points")
 
         # sanity check
         assert ((self.sem_label + (self.inst_label << 16) == label).all())
