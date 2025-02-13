@@ -7,7 +7,7 @@ based real-time safe landing zone detection module (LCDM) for vertical take-off 
 For more information about this work, please see our <a href="https://yettobeadded.com" target="_blank">paper</a>.
 
 <p align="center">
-  <img src="images/training process1.png" alt="Training Process" >
+  <img src="images/rev3_training process1.png" alt="Training Process" >
 </p>
 <p align="center"><b>Figure 1:</b> Training Process</p>
 
@@ -23,6 +23,17 @@ This repository contains the following:
 1. Inference code
 2. <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank">Link </a> to the weight files of the trained GAN models
 3. <a href="https://drive.google.com/drive/folders/1PJK-v1QC7MsHdm0dEV_PRicn9LlXuLf2?usp=sharing" target="_blank">Link </a> to sample test data
+
+## Sample results
+
+Here are some sample results from our method for three different datasets (MUN-FRL, Holyrood-Paradis, HKU-MARS)
+
+<p align="center">
+  <img src="images/bell_light_all.drawio.png" alt="Bell Light" width="30%">
+  <img src="images/hk_amt_both.drawio.png" alt="HK AMT Both" width="30%">
+  <img src="images/holy_para_both.drawio.png" alt="Holy Para Both" width="30%">
+</p>
+
 
 ## Instructions to run the code and obtain results
 
