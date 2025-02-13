@@ -1,0 +1,1554 @@
+2024-06-07 19:34:03
+Lr: 1.000e-04 | Epoch: [0][0/80] | Time 6.515 (6.515) | Data 0.448 (0.448) | Loss 12.5748 (12.5748) | Bd 3.8409 (3.8409) | acc 0.393 (0.393) | IoU 0.210 (0.210) | [15:28:17]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.605
+Loss avg 0.8235
+Jaccard avg 0.5070
+WCE avg 0.3165
+Acc avg 0.932
+IoU avg 0.790
+Pre avg 0.882
+Rec avg 0.872
+F1 avg 0.877
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.922
+IoU class 2 [Non-LZ] = 0.659
+Best mean iou in validation so far, save model!
+2024-06-07 19:35:37
+Lr: 1.000e-02 | Epoch: [1][0/80] | Time 1.504 (1.017) | Data 0.522 (0.028) | Loss 6.1916 (6.1916) | Bd 3.9712 (3.9712) | acc 0.956 (0.956) | IoU 0.906 (0.906) | [2:37:53]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.500
+Loss avg 0.7521
+Jaccard avg 0.5041
+WCE avg 0.2480
+Acc avg 0.937
+IoU avg 0.787
+Pre avg 0.925
+Rec avg 0.838
+F1 avg 0.874
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.928
+IoU class 2 [Non-LZ] = 0.646
+2024-06-07 19:37:01
+Lr: 9.990e-03 | Epoch: [2][0/80] | Time 1.365 (0.978) | Data 0.482 (0.020) | Loss 5.4745 (5.4745) | Bd 3.9677 (3.9677) | acc 0.962 (0.962) | IoU 0.927 (0.927) | [2:26:41]
+Validation set:
+Time avg per batch 0.465
+Loss avg 0.6863
+Jaccard avg 0.4843
+WCE avg 0.2019
+Acc avg 0.943
+IoU avg 0.816
+Pre avg 0.912
+Rec avg 0.879
+F1 avg 0.894
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.935
+IoU class 2 [Non-LZ] = 0.698
+Best mean iou in validation so far, save model!
+2024-06-07 19:38:24
+Lr: 9.959e-03 | Epoch: [3][0/80] | Time 1.480 (0.966) | Data 0.474 (0.017) | Loss 9.0093 (9.0093) | Bd 3.9176 (3.9176) | acc 0.825 (0.825) | IoU 0.440 (0.440) | [2:22:08]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.447
+Loss avg 0.7048
+Jaccard avg 0.4912
+WCE avg 0.2136
+Acc avg 0.951
+IoU avg 0.835
+Pre avg 0.940
+Rec avg 0.879
+F1 avg 0.906
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.944
+IoU class 2 [Non-LZ] = 0.726
+Best mean iou in validation so far, save model!
+2024-06-07 19:39:48
+Lr: 9.909e-03 | Epoch: [4][0/80] | Time 1.663 (0.959) | Data 0.518 (0.016) | Loss 6.1667 (6.1667) | Bd 3.9048 (3.9048) | acc 0.908 (0.908) | IoU 0.788 (0.788) | [2:19:05]
+Validation set:
+Time avg per batch 0.438
+Loss avg 0.7368
+Jaccard avg 0.4999
+WCE avg 0.2369
+Acc avg 0.949
+IoU avg 0.828
+Pre avg 0.941
+Rec avg 0.871
+F1 avg 0.901
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.942
+IoU class 2 [Non-LZ] = 0.713
+2024-06-07 19:41:13
+Lr: 9.838e-03 | Epoch: [5][0/80] | Time 1.471 (0.958) | Data 0.496 (0.015) | Loss 5.4712 (5.4712) | Bd 3.9202 (3.9202) | acc 0.954 (0.954) | IoU 0.910 (0.910) | [2:16:59]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.431
+Loss avg 0.7069
+Jaccard avg 0.4848
+WCE avg 0.2221
+Acc avg 0.949
+IoU avg 0.829
+Pre avg 0.928
+Rec avg 0.881
+F1 avg 0.902
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.941
+IoU class 2 [Non-LZ] = 0.717
+2024-06-07 19:42:36
+Lr: 9.748e-03 | Epoch: [6][0/80] | Time 1.430 (0.954) | Data 0.482 (0.014) | Loss 5.9807 (5.9807) | Bd 3.8824 (3.8824) | acc 0.935 (0.935) | IoU 0.868 (0.868) | [2:14:48]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.426
+Loss avg 0.7374
+Jaccard avg 0.4983
+WCE avg 0.2391
+Acc avg 0.950
+IoU avg 0.830
+Pre avg 0.937
+Rec avg 0.876
+F1 avg 0.903
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.942
+IoU class 2 [Non-LZ] = 0.718
+2024-06-07 19:43:59
+Lr: 9.638e-03 | Epoch: [7][0/80] | Time 1.413 (0.950) | Data 0.499 (0.014) | Loss 4.5931 (4.5931) | Bd 3.8331 (3.8331) | acc 0.990 (0.990) | IoU 0.979 (0.979) | [2:12:42]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.423
+Loss avg 0.7101
+Jaccard avg 0.4915
+WCE avg 0.2185
+Acc avg 0.950
+IoU avg 0.830
+Pre avg 0.941
+Rec avg 0.873
+F1 avg 0.903
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.943
+IoU class 2 [Non-LZ] = 0.717
+2024-06-07 19:45:22
+Lr: 9.510e-03 | Epoch: [8][0/80] | Time 1.510 (0.949) | Data 0.483 (0.013) | Loss 4.5931 (4.5931) | Bd 3.8706 (3.8706) | acc 0.990 (0.990) | IoU 0.970 (0.970) | [2:11:01]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.420
+Loss avg 0.7443
+Jaccard avg 0.4955
+WCE avg 0.2488
+Acc avg 0.952
+IoU avg 0.836
+Pre avg 0.939
+Rec avg 0.881
+F1 avg 0.907
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.945
+IoU class 2 [Non-LZ] = 0.727
+Best mean iou in validation so far, save model!
+2024-06-07 19:46:47
+Lr: 9.363e-03 | Epoch: [9][0/80] | Time 1.346 (0.948) | Data 0.513 (0.013) | Loss 4.7856 (4.7856) | Bd 3.7777 (3.7777) | acc 0.971 (0.971) | IoU 0.942 (0.942) | [2:09:23]
+Validation set:
+Time avg per batch 0.418
+Loss avg 0.6854
+Jaccard avg 0.4898
+WCE avg 0.1956
+Acc avg 0.952
+IoU avg 0.832
+Pre avg 0.952
+Rec avg 0.870
+F1 avg 0.904
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.945
+IoU class 2 [Non-LZ] = 0.720
+2024-06-07 19:48:12
+Lr: 9.199e-03 | Epoch: [10][0/80] | Time 1.390 (0.949) | Data 0.485 (0.013) | Loss 5.7651 (5.7651) | Bd 3.8050 (3.8050) | acc 0.914 (0.914) | IoU 0.837 (0.837) | [2:07:59]
+Validation set:
+Time avg per batch 0.416
+Loss avg 0.7449
+Jaccard avg 0.4985
+WCE avg 0.2464
+Acc avg 0.950
+IoU avg 0.830
+Pre avg 0.935
+Rec avg 0.878
+F1 avg 0.903
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.942
+IoU class 2 [Non-LZ] = 0.719
+2024-06-07 19:49:36
+Lr: 9.017e-03 | Epoch: [11][0/80] | Time 1.581 (0.949) | Data 0.510 (0.013) | Loss 5.3905 (5.3905) | Bd 3.8289 (3.8289) | acc 0.960 (0.960) | IoU 0.883 (0.883) | [2:06:29]
+Validation set:
+Time avg per batch 0.414
+Loss avg 0.7009
+Jaccard avg 0.4919
+WCE avg 0.2090
+Acc avg 0.951
+IoU avg 0.835
+Pre avg 0.940
+Rec avg 0.880
+F1 avg 0.906
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.944
+IoU class 2 [Non-LZ] = 0.726
+2024-06-07 19:51:00
+Lr: 8.819e-03 | Epoch: [12][0/80] | Time 1.526 (0.949) | Data 0.483 (0.013) | Loss 5.7217 (5.7217) | Bd 3.8419 (3.8419) | acc 0.955 (0.955) | IoU 0.860 (0.860) | [2:04:56]
+Validation set:
+Time avg per batch 0.413
+Loss avg 0.6850
+Jaccard avg 0.4878
+WCE avg 0.1971
+Acc avg 0.950
+IoU avg 0.831
+Pre avg 0.940
+Rec avg 0.875
+F1 avg 0.903
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.943
+IoU class 2 [Non-LZ] = 0.719
+2024-06-07 19:52:23
+Lr: 8.606e-03 | Epoch: [13][0/80] | Time 1.299 (0.948) | Data 0.477 (0.013) | Loss 4.6559 (4.6559) | Bd 3.7134 (3.7134) | acc 0.973 (0.973) | IoU 0.947 (0.947) | [2:03:23]
+Validation set:
+Time avg per batch 0.412
+Loss avg 0.6900
+Jaccard avg 0.4935
+WCE avg 0.1965
+Acc avg 0.952
+IoU avg 0.837
+Pre avg 0.946
+Rec avg 0.877
+F1 avg 0.907
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.945
+IoU class 2 [Non-LZ] = 0.728
+Best mean iou in validation so far, save model!
+2024-06-07 19:53:49
+Lr: 8.378e-03 | Epoch: [14][0/80] | Time 1.520 (0.949) | Data 0.570 (0.013) | Loss 5.3832 (5.3832) | Bd 3.7825 (3.7825) | acc 0.948 (0.948) | IoU 0.884 (0.884) | [2:02:05]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.411
+Loss avg 0.7485
+Jaccard avg 0.5008
+WCE avg 0.2477
+Acc avg 0.953
+IoU avg 0.837
+Pre avg 0.949
+Rec avg 0.876
+F1 avg 0.907
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.946
+IoU class 2 [Non-LZ] = 0.728
+Best mean iou in validation so far, save model!
+2024-06-07 19:55:15
+Lr: 8.136e-03 | Epoch: [15][0/80] | Time 1.758 (0.950) | Data 0.584 (0.013) | Loss 6.4308 (6.4308) | Bd 3.6390 (3.6390) | acc 0.940 (0.940) | IoU 0.588 (0.588) | [2:00:45]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.410
+Loss avg 0.7345
+Jaccard avg 0.4965
+WCE avg 0.2381
+Acc avg 0.950
+IoU avg 0.831
+Pre avg 0.943
+Rec avg 0.874
+F1 avg 0.904
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.943
+IoU class 2 [Non-LZ] = 0.718
+2024-06-07 19:56:39
+Lr: 7.882e-03 | Epoch: [16][0/80] | Time 1.388 (0.950) | Data 0.495 (0.013) | Loss 4.2438 (4.2438) | Bd 3.5928 (3.5928) | acc 0.982 (0.982) | IoU 0.963 (0.963) | [1:59:15]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.409
+Loss avg 0.7164
+Jaccard avg 0.4907
+WCE avg 0.2257
+Acc avg 0.952
+IoU avg 0.834
+Pre avg 0.945
+Rec avg 0.876
+F1 avg 0.906
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.945
+IoU class 2 [Non-LZ] = 0.724
+2024-06-07 19:58:03
+Lr: 7.616e-03 | Epoch: [17][0/80] | Time 1.563 (0.949) | Data 0.489 (0.013) | Loss 5.5315 (5.5315) | Bd 3.5100 (3.5100) | acc 0.959 (0.959) | IoU 0.823 (0.823) | [1:57:45]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.409
+Loss avg 0.7181
+Jaccard avg 0.4959
+WCE avg 0.2222
+Acc avg 0.955
+IoU avg 0.842
+Pre avg 0.959
+Rec avg 0.875
+F1 avg 0.911
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.948
+IoU class 2 [Non-LZ] = 0.736
+Best mean iou in validation so far, save model!
+2024-06-07 19:59:27
+Lr: 7.340e-03 | Epoch: [18][0/80] | Time 1.420 (0.949) | Data 0.491 (0.012) | Loss 5.0283 (5.0283) | Bd 3.4796 (3.4796) | acc 0.954 (0.954) | IoU 0.909 (0.909) | [1:56:17]
+Validation set:
+Time avg per batch 0.408
+Loss avg 0.7151
+Jaccard avg 0.4889
+WCE avg 0.2263
+Acc avg 0.944
+IoU avg 0.808
+Pre avg 0.949
+Rec avg 0.847
+F1 avg 0.888
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.937
+IoU class 2 [Non-LZ] = 0.679
+2024-06-07 20:00:52
+Lr: 7.054e-03 | Epoch: [19][0/80] | Time 1.459 (0.949) | Data 0.493 (0.012) | Loss 5.8783 (5.8783) | Bd 3.4210 (3.4210) | acc 0.873 (0.873) | IoU 0.770 (0.770) | [1:54:52]
+Validation set:
+Time avg per batch 0.408
+Loss avg 0.7448
+Jaccard avg 0.4982
+WCE avg 0.2466
+Acc avg 0.954
+IoU avg 0.838
+Pre avg 0.957
+Rec avg 0.873
+F1 avg 0.908
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.947
+IoU class 2 [Non-LZ] = 0.730
+2024-06-07 20:02:17
+Lr: 6.760e-03 | Epoch: [20][0/80] | Time 1.542 (0.950) | Data 0.467 (0.012) | Loss 6.9176 (6.9176) | Bd 3.3447 (3.3447) | acc 0.933 (0.933) | IoU 0.576 (0.576) | [1:53:30]
+Validation set:
+Time avg per batch 0.407
+Loss avg 0.7229
+Jaccard avg 0.4857
+WCE avg 0.2371
+Acc avg 0.945
+IoU avg 0.807
+Pre avg 0.953
+Rec avg 0.844
+F1 avg 0.887
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.938
+IoU class 2 [Non-LZ] = 0.676
+2024-06-07 20:03:41
+Lr: 6.458e-03 | Epoch: [21][0/80] | Time 1.434 (0.950) | Data 0.495 (0.012) | Loss 4.1399 (4.1399) | Bd 3.2369 (3.2369) | acc 0.970 (0.970) | IoU 0.941 (0.941) | [1:52:02]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.407
+Loss avg 0.6851
+Jaccard avg 0.4605
+WCE avg 0.2246
+Acc avg 0.937
+IoU avg 0.781
+Pre avg 0.944
+Rec avg 0.824
+F1 avg 0.870
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.929
+IoU class 2 [Non-LZ] = 0.634
+2024-06-07 20:05:05
+Lr: 6.151e-03 | Epoch: [22][0/80] | Time 1.416 (0.950) | Data 0.477 (0.012) | Loss 4.1604 (4.1604) | Bd 3.2136 (3.2136) | acc 0.979 (0.979) | IoU 0.923 (0.923) | [1:50:34]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.407
+Loss avg 0.5901
+Jaccard avg 0.4288
+WCE avg 0.1613
+Acc avg 0.959
+IoU avg 0.858
+Pre avg 0.955
+Rec avg 0.893
+F1 avg 0.921
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.763
+Best mean iou in validation so far, save model!
+2024-06-07 20:06:29
+Lr: 5.840e-03 | Epoch: [23][0/80] | Time 1.490 (0.949) | Data 0.487 (0.012) | Loss 3.9645 (3.9645) | Bd 3.0048 (3.0048) | acc 0.981 (0.981) | IoU 0.945 (0.945) | [1:49:06]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.406
+Loss avg 0.6637
+Jaccard avg 0.4566
+WCE avg 0.2071
+Acc avg 0.949
+IoU avg 0.822
+Pre avg 0.951
+Rec avg 0.860
+F1 avg 0.898
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.941
+IoU class 2 [Non-LZ] = 0.703
+2024-06-07 20:07:53
+Lr: 5.525e-03 | Epoch: [24][0/80] | Time 1.650 (0.949) | Data 0.518 (0.012) | Loss 3.8826 (3.8826) | Bd 3.0168 (3.0168) | acc 0.984 (0.984) | IoU 0.949 (0.949) | [1:47:39]
+Validation set:
+Time avg per batch 0.406
+Loss avg 0.6163
+Jaccard avg 0.4333
+WCE avg 0.1830
+Acc avg 0.958
+IoU avg 0.855
+Pre avg 0.957
+Rec avg 0.890
+F1 avg 0.919
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.759
+2024-06-07 20:09:17
+Lr: 5.209e-03 | Epoch: [25][0/80] | Time 1.429 (0.949) | Data 0.487 (0.012) | Loss 3.8234 (3.8234) | Bd 3.1116 (3.1116) | acc 0.978 (0.978) | IoU 0.957 (0.957) | [1:46:13]
+Validation set:
+Time avg per batch 0.406
+Loss avg 0.6715
+Jaccard avg 0.4596
+WCE avg 0.2119
+Acc avg 0.954
+IoU avg 0.840
+Pre avg 0.958
+Rec avg 0.874
+F1 avg 0.909
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.947
+IoU class 2 [Non-LZ] = 0.733
+2024-06-07 20:10:42
+Lr: 4.891e-03 | Epoch: [26][0/80] | Time 1.527 (0.949) | Data 0.468 (0.012) | Loss 4.0115 (4.0115) | Bd 3.0228 (3.0228) | acc 0.972 (0.972) | IoU 0.943 (0.943) | [1:44:46]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.406
+Loss avg 0.6240
+Jaccard avg 0.4347
+WCE avg 0.1893
+Acc avg 0.959
+IoU avg 0.858
+Pre avg 0.952
+Rec avg 0.896
+F1 avg 0.921
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.764
+Best mean iou in validation so far, save model!
+2024-06-07 20:12:06
+Lr: 4.575e-03 | Epoch: [27][0/80] | Time 1.667 (0.949) | Data 0.573 (0.012) | Loss 4.2473 (4.2473) | Bd 2.9346 (2.9346) | acc 0.965 (0.965) | IoU 0.911 (0.911) | [1:43:22]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.406
+Loss avg 0.6366
+Jaccard avg 0.4502
+WCE avg 0.1865
+Acc avg 0.958
+IoU avg 0.856
+Pre avg 0.959
+Rec avg 0.889
+F1 avg 0.919
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.759
+2024-06-07 20:13:30
+Lr: 4.260e-03 | Epoch: [28][0/80] | Time 1.748 (0.949) | Data 0.555 (0.012) | Loss 4.1056 (4.1056) | Bd 2.9900 (2.9900) | acc 0.977 (0.977) | IoU 0.908 (0.908) | [1:41:56]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.406
+Loss avg 0.6100
+Jaccard avg 0.4226
+WCE avg 0.1874
+Acc avg 0.957
+IoU avg 0.852
+Pre avg 0.956
+Rec avg 0.887
+F1 avg 0.917
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.951
+IoU class 2 [Non-LZ] = 0.754
+2024-06-07 20:14:55
+Lr: 3.949e-03 | Epoch: [29][0/80] | Time 1.506 (0.948) | Data 0.460 (0.012) | Loss 3.4749 (3.4749) | Bd 2.9295 (2.9295) | acc 0.990 (0.990) | IoU 0.979 (0.979) | [1:40:29]
+Validation set:
+Time avg per batch 0.405
+Loss avg 0.5608
+Jaccard avg 0.4036
+WCE avg 0.1571
+Acc avg 0.961
+IoU avg 0.866
+Pre avg 0.955
+Rec avg 0.902
+F1 avg 0.926
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.955
+IoU class 2 [Non-LZ] = 0.777
+Best mean iou in validation so far, save model!
+2024-06-07 20:16:19
+Lr: 3.642e-03 | Epoch: [30][0/80] | Time 1.498 (0.948) | Data 0.491 (0.012) | Loss 4.0318 (4.0318) | Bd 2.9476 (2.9476) | acc 0.981 (0.981) | IoU 0.904 (0.904) | [1:39:04]
+Validation set:
+Time avg per batch 0.405
+Loss avg 0.6356
+Jaccard avg 0.4438
+WCE avg 0.1919
+Acc avg 0.957
+IoU avg 0.852
+Pre avg 0.959
+Rec avg 0.885
+F1 avg 0.917
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.951
+IoU class 2 [Non-LZ] = 0.753
+2024-06-07 20:17:45
+Lr: 3.340e-03 | Epoch: [31][0/80] | Time 1.490 (0.949) | Data 0.484 (0.012) | Loss 3.7106 (3.7106) | Bd 2.7274 (2.7274) | acc 0.977 (0.977) | IoU 0.928 (0.928) | [1:37:42]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.405
+Loss avg 0.5995
+Jaccard avg 0.4248
+WCE avg 0.1746
+Acc avg 0.959
+IoU avg 0.857
+Pre avg 0.956
+Rec avg 0.893
+F1 avg 0.920
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.763
+2024-06-07 20:19:08
+Lr: 3.046e-03 | Epoch: [32][0/80] | Time 1.458 (0.949) | Data 0.522 (0.012) | Loss 3.8580 (3.8580) | Bd 3.0035 (3.0035) | acc 0.986 (0.986) | IoU 0.960 (0.960) | [1:36:14]
+Validation set:
+Time avg per batch 0.405
+Loss avg 0.6189
+Jaccard avg 0.4299
+WCE avg 0.1889
+Acc avg 0.957
+IoU avg 0.852
+Pre avg 0.953
+Rec avg 0.889
+F1 avg 0.917
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.951
+IoU class 2 [Non-LZ] = 0.754
+2024-06-07 20:20:34
+Lr: 2.760e-03 | Epoch: [33][0/80] | Time 1.454 (0.949) | Data 0.484 (0.012) | Loss 3.7754 (3.7754) | Bd 2.8644 (2.8644) | acc 0.979 (0.979) | IoU 0.940 (0.940) | [1:34:52]
+Validation set:
+Time avg per batch 0.405
+Loss avg 0.4903
+Jaccard avg 0.3579
+WCE avg 0.1324
+Acc avg 0.966
+IoU avg 0.883
+Pre avg 0.957
+Rec avg 0.918
+F1 avg 0.936
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.960
+IoU class 2 [Non-LZ] = 0.806
+Best mean iou in validation so far, save model!
+2024-06-07 20:21:59
+Lr: 2.484e-03 | Epoch: [34][0/80] | Time 1.484 (0.949) | Data 0.519 (0.012) | Loss 3.5245 (3.5245) | Bd 2.6959 (2.6959) | acc 0.978 (0.978) | IoU 0.945 (0.945) | [1:33:29]
+Validation set:
+Time avg per batch 0.405
+Loss avg 0.5106
+Jaccard avg 0.3699
+WCE avg 0.1408
+Acc avg 0.966
+IoU avg 0.882
+Pre avg 0.963
+Rec avg 0.912
+F1 avg 0.935
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.960
+IoU class 2 [Non-LZ] = 0.803
+2024-06-07 20:23:24
+Lr: 2.218e-03 | Epoch: [35][0/80] | Time 1.375 (0.949) | Data 0.509 (0.012) | Loss 3.5036 (3.5036) | Bd 2.7193 (2.7193) | acc 0.978 (0.978) | IoU 0.954 (0.954) | [1:32:04]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.5703
+Jaccard avg 0.3996
+WCE avg 0.1707
+Acc avg 0.960
+IoU avg 0.861
+Pre avg 0.962
+Rec avg 0.893
+F1 avg 0.923
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.954
+IoU class 2 [Non-LZ] = 0.769
+2024-06-07 20:24:50
+Lr: 1.964e-03 | Epoch: [36][0/80] | Time 1.420 (0.950) | Data 0.470 (0.012) | Loss 3.4470 (3.4470) | Bd 2.6820 (2.6820) | acc 0.986 (0.986) | IoU 0.964 (0.964) | [1:30:40]
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.5019
+Jaccard avg 0.3678
+WCE avg 0.1341
+Acc avg 0.965
+IoU avg 0.880
+Pre avg 0.962
+Rec avg 0.912
+F1 avg 0.935
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.960
+IoU class 2 [Non-LZ] = 0.801
+2024-06-07 20:26:14
+Lr: 1.722e-03 | Epoch: [37][0/80] | Time 1.348 (0.950) | Data 0.520 (0.012) | Loss 3.2800 (3.2800) | Bd 2.7939 (2.7939) | acc 0.991 (0.991) | IoU 0.983 (0.983) | [1:29:15]
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.5734
+Jaccard avg 0.4052
+WCE avg 0.1683
+Acc avg 0.958
+IoU avg 0.854
+Pre avg 0.961
+Rec avg 0.886
+F1 avg 0.918
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.757
+2024-06-07 20:27:39
+Lr: 1.494e-03 | Epoch: [38][0/80] | Time 1.350 (0.950) | Data 0.498 (0.012) | Loss 3.3858 (3.3858) | Bd 2.7185 (2.7185) | acc 0.984 (0.984) | IoU 0.967 (0.967) | [1:27:51]
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.7667
+Jaccard avg 0.4826
+WCE avg 0.2841
+Acc avg 0.945
+IoU avg 0.808
+Pre avg 0.962
+Rec avg 0.842
+F1 avg 0.888
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.938
+IoU class 2 [Non-LZ] = 0.678
+2024-06-07 20:29:03
+Lr: 1.281e-03 | Epoch: [39][0/80] | Time 1.331 (0.950) | Data 0.490 (0.012) | Loss 3.7804 (3.7804) | Bd 2.8047 (2.8047) | acc 0.976 (0.976) | IoU 0.952 (0.952) | [1:26:25]
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.6740
+Jaccard avg 0.4501
+WCE avg 0.2239
+Acc avg 0.956
+IoU avg 0.844
+Pre avg 0.967
+Rec avg 0.874
+F1 avg 0.912
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.949
+IoU class 2 [Non-LZ] = 0.739
+2024-06-07 20:30:27
+Lr: 1.083e-03 | Epoch: [40][0/80] | Time 1.420 (0.950) | Data 0.487 (0.012) | Loss 3.5913 (3.5913) | Bd 2.7405 (2.7405) | acc 0.981 (0.981) | IoU 0.959 (0.959) | [1:24:59]
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.5777
+Jaccard avg 0.4053
+WCE avg 0.1724
+Acc avg 0.963
+IoU avg 0.870
+Pre avg 0.967
+Rec avg 0.898
+F1 avg 0.928
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.957
+IoU class 2 [Non-LZ] = 0.783
+2024-06-07 20:31:52
+Lr: 9.015e-04 | Epoch: [41][0/80] | Time 1.488 (0.950) | Data 0.511 (0.012) | Loss 3.4996 (3.4996) | Bd 2.6185 (2.6185) | acc 0.981 (0.981) | IoU 0.950 (0.950) | [1:23:35]
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.7239
+Jaccard avg 0.4697
+WCE avg 0.2542
+Acc avg 0.943
+IoU avg 0.798
+Pre avg 0.960
+Rec avg 0.833
+F1 avg 0.881
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.935
+IoU class 2 [Non-LZ] = 0.661
+2024-06-07 20:33:17
+Lr: 7.370e-04 | Epoch: [42][0/80] | Time 1.664 (0.950) | Data 0.457 (0.012) | Loss 3.5626 (3.5626) | Bd 2.9191 (2.9191) | acc 0.986 (0.986) | IoU 0.968 (0.968) | [1:22:11]
+Validation set:
+Time avg per batch 0.404
+Loss avg 0.6400
+Jaccard avg 0.4375
+WCE avg 0.2025
+Acc avg 0.958
+IoU avg 0.854
+Pre avg 0.966
+Rec avg 0.883
+F1 avg 0.918
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.756
+2024-06-07 20:34:43
+Lr: 5.902e-04 | Epoch: [43][0/80] | Time 1.390 (0.950) | Data 0.512 (0.012) | Loss 3.1020 (3.1020) | Bd 2.6374 (2.6374) | acc 0.990 (0.990) | IoU 0.977 (0.977) | [1:20:47]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.6193
+Jaccard avg 0.4214
+WCE avg 0.1979
+Acc avg 0.959
+IoU avg 0.857
+Pre avg 0.966
+Rec avg 0.886
+F1 avg 0.920
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.953
+IoU class 2 [Non-LZ] = 0.761
+2024-06-07 20:36:08
+Lr: 4.618e-04 | Epoch: [44][0/80] | Time 1.506 (0.951) | Data 0.549 (0.012) | Loss 3.5298 (3.5298) | Bd 2.7755 (2.7755) | acc 0.986 (0.986) | IoU 0.966 (0.966) | [1:19:23]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.5245
+Jaccard avg 0.3703
+WCE avg 0.1542
+Acc avg 0.964
+IoU avg 0.875
+Pre avg 0.966
+Rec avg 0.903
+F1 avg 0.931
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.958
+IoU class 2 [Non-LZ] = 0.791
+2024-06-07 20:37:34
+Lr: 3.522e-04 | Epoch: [45][0/80] | Time 1.630 (0.951) | Data 0.557 (0.012) | Loss 3.3679 (3.3679) | Bd 2.6839 (2.6839) | acc 0.986 (0.986) | IoU 0.955 (0.955) | [1:17:59]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.5797
+Jaccard avg 0.4002
+WCE avg 0.1795
+Acc avg 0.958
+IoU avg 0.854
+Pre avg 0.965
+Rec avg 0.884
+F1 avg 0.918
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.756
+2024-06-07 20:38:59
+Lr: 2.619e-04 | Epoch: [46][0/80] | Time 1.461 (0.951) | Data 0.490 (0.012) | Loss 3.2248 (3.2248) | Bd 2.6570 (2.6570) | acc 0.991 (0.991) | IoU 0.979 (0.979) | [1:16:35]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.6597
+Jaccard avg 0.4336
+WCE avg 0.2261
+Acc avg 0.947
+IoU avg 0.815
+Pre avg 0.960
+Rec avg 0.849
+F1 avg 0.893
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.940
+IoU class 2 [Non-LZ] = 0.690
+2024-06-07 20:40:26
+Lr: 1.913e-04 | Epoch: [47][0/80] | Time 1.364 (0.952) | Data 0.490 (0.012) | Loss 3.0705 (3.0705) | Bd 2.7721 (2.7721) | acc 0.996 (0.996) | IoU 0.991 (0.991) | [1:15:12]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.7217
+Jaccard avg 0.4709
+WCE avg 0.2508
+Acc avg 0.948
+IoU avg 0.818
+Pre avg 0.963
+Rec avg 0.851
+F1 avg 0.895
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.941
+IoU class 2 [Non-LZ] = 0.695
+2024-06-07 20:41:51
+Lr: 1.406e-04 | Epoch: [48][0/80] | Time 1.398 (0.952) | Data 0.472 (0.012) | Loss 3.4093 (3.4093) | Bd 2.6091 (2.6091) | acc 0.984 (0.984) | IoU 0.955 (0.955) | [1:13:48]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.4491
+Jaccard avg 0.3269
+WCE avg 0.1223
+Acc avg 0.970
+IoU avg 0.894
+Pre avg 0.966
+Rec avg 0.923
+F1 avg 0.943
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.965
+IoU class 2 [Non-LZ] = 0.824
+Best mean iou in validation so far, save model!
+2024-06-07 20:43:17
+Lr: 1.102e-04 | Epoch: [49][0/80] | Time 1.587 (0.952) | Data 0.508 (0.012) | Loss 3.7934 (3.7934) | Bd 2.7043 (2.7043) | acc 0.985 (0.985) | IoU 0.902 (0.902) | [1:12:23]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.4218
+Jaccard avg 0.3026
+WCE avg 0.1192
+Acc avg 0.973
+IoU avg 0.905
+Pre avg 0.968
+Rec avg 0.933
+F1 avg 0.949
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.968
+IoU class 2 [Non-LZ] = 0.843
+Best mean iou in validation so far, save model!
+2024-06-07 20:44:41
+Lr: 1.000e-04 | Epoch: [50][0/80] | Time 1.527 (0.952) | Data 0.506 (0.012) | Loss 3.0734 (3.0734) | Bd 2.5549 (2.5549) | acc 0.992 (0.992) | IoU 0.980 (0.980) | [1:10:58]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.6606
+Jaccard avg 0.4566
+WCE avg 0.2040
+Acc avg 0.953
+IoU avg 0.838
+Pre avg 0.959
+Rec avg 0.871
+F1 avg 0.908
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.947
+IoU class 2 [Non-LZ] = 0.729
+2024-06-07 20:46:07
+Lr: 1.000e-02 | Epoch: [51][0/80] | Time 1.421 (0.952) | Data 0.467 (0.012) | Loss 4.6922 (4.6922) | Bd 2.8861 (2.8861) | acc 0.951 (0.951) | IoU 0.882 (0.882) | [1:09:33]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.7571
+Jaccard avg 0.4789
+WCE avg 0.2782
+Acc avg 0.953
+IoU avg 0.840
+Pre avg 0.951
+Rec avg 0.877
+F1 avg 0.909
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.947
+IoU class 2 [Non-LZ] = 0.732
+2024-06-07 20:47:31
+Lr: 9.990e-03 | Epoch: [52][0/80] | Time 1.461 (0.952) | Data 0.487 (0.012) | Loss 3.4167 (3.4167) | Bd 2.7299 (2.7299) | acc 0.985 (0.985) | IoU 0.966 (0.966) | [1:08:07]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.7390
+Jaccard avg 0.4754
+WCE avg 0.2635
+Acc avg 0.955
+IoU avg 0.843
+Pre avg 0.955
+Rec avg 0.879
+F1 avg 0.912
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.948
+IoU class 2 [Non-LZ] = 0.739
+2024-06-07 20:48:57
+Lr: 9.959e-03 | Epoch: [53][0/80] | Time 1.491 (0.952) | Data 0.496 (0.012) | Loss 4.3960 (4.3960) | Bd 2.9122 (2.9122) | acc 0.953 (0.953) | IoU 0.878 (0.878) | [1:06:43]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.6409
+Jaccard avg 0.4449
+WCE avg 0.1960
+Acc avg 0.953
+IoU avg 0.834
+Pre avg 0.960
+Rec avg 0.867
+F1 avg 0.905
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.946
+IoU class 2 [Non-LZ] = 0.722
+2024-06-07 20:50:22
+Lr: 9.909e-03 | Epoch: [54][0/80] | Time 1.437 (0.953) | Data 0.484 (0.012) | Loss 3.5086 (3.5086) | Bd 2.7046 (2.7046) | acc 0.995 (0.995) | IoU 0.983 (0.983) | [1:05:18]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.5863
+Jaccard avg 0.4220
+WCE avg 0.1642
+Acc avg 0.959
+IoU avg 0.860
+Pre avg 0.956
+Rec avg 0.895
+F1 avg 0.922
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.953
+IoU class 2 [Non-LZ] = 0.767
+2024-06-07 20:51:47
+Lr: 9.838e-03 | Epoch: [55][0/80] | Time 1.564 (0.953) | Data 0.482 (0.012) | Loss 4.3031 (4.3031) | Bd 2.5919 (2.5919) | acc 0.958 (0.958) | IoU 0.871 (0.871) | [1:03:53]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.6274
+Jaccard avg 0.4361
+WCE avg 0.1913
+Acc avg 0.958
+IoU avg 0.855
+Pre avg 0.960
+Rec avg 0.888
+F1 avg 0.919
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.952
+IoU class 2 [Non-LZ] = 0.758
+2024-06-07 20:53:13
+Lr: 9.748e-03 | Epoch: [56][0/80] | Time 1.367 (0.953) | Data 0.496 (0.012) | Loss 3.7041 (3.7041) | Bd 2.7860 (2.7860) | acc 0.978 (0.978) | IoU 0.956 (0.956) | [1:02:29]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.5738
+Jaccard avg 0.3969
+WCE avg 0.1768
+Acc avg 0.956
+IoU avg 0.850
+Pre avg 0.953
+Rec avg 0.887
+F1 avg 0.916
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.950
+IoU class 2 [Non-LZ] = 0.750
+2024-06-07 20:54:37
+Lr: 9.638e-03 | Epoch: [57][0/80] | Time 1.565 (0.953) | Data 0.488 (0.012) | Loss 4.9072 (4.9072) | Bd 2.8394 (2.8394) | acc 0.937 (0.937) | IoU 0.853 (0.853) | [1:01:03]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.5382
+Jaccard avg 0.3904
+WCE avg 0.1477
+Acc avg 0.961
+IoU avg 0.866
+Pre avg 0.957
+Rec avg 0.901
+F1 avg 0.926
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.955
+IoU class 2 [Non-LZ] = 0.777
+2024-06-07 20:56:02
+Lr: 9.510e-03 | Epoch: [58][0/80] | Time 1.415 (0.953) | Data 0.530 (0.012) | Loss 3.7385 (3.7385) | Bd 2.7120 (2.7120) | acc 0.976 (0.976) | IoU 0.949 (0.949) | [0:59:38]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.4856
+Jaccard avg 0.3556
+WCE avg 0.1300
+Acc avg 0.967
+IoU avg 0.886
+Pre avg 0.958
+Rec avg 0.920
+F1 avg 0.938
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.961
+IoU class 2 [Non-LZ] = 0.811
+2024-06-07 20:57:27
+Lr: 9.363e-03 | Epoch: [59][0/80] | Time 1.442 (0.953) | Data 0.476 (0.012) | Loss 3.2127 (3.2127) | Bd 2.6139 (2.6139) | acc 0.987 (0.987) | IoU 0.964 (0.964) | [0:58:13]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.5218
+Jaccard avg 0.3822
+WCE avg 0.1395
+Acc avg 0.964
+IoU avg 0.876
+Pre avg 0.962
+Rec avg 0.907
+F1 avg 0.932
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.958
+IoU class 2 [Non-LZ] = 0.793
+2024-06-07 20:58:52
+Lr: 9.199e-03 | Epoch: [60][0/80] | Time 1.573 (0.953) | Data 0.486 (0.012) | Loss 4.7621 (4.7621) | Bd 2.7138 (2.7138) | acc 0.953 (0.953) | IoU 0.888 (0.888) | [0:56:49]
+Validation set:
+Time avg per batch 0.403
+Loss avg 0.5886
+Jaccard avg 0.4104
+WCE avg 0.1782
+Acc avg 0.963
+IoU avg 0.871
+Pre avg 0.961
+Rec avg 0.903
+F1 avg 0.929
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.957
+IoU class 2 [Non-LZ] = 0.785
+2024-06-07 21:00:17
+Lr: 9.017e-03 | Epoch: [61][0/80] | Time 1.408 (0.953) | Data 0.493 (0.012) | Loss 3.1824 (3.1824) | Bd 2.7242 (2.7242) | acc 0.989 (0.989) | IoU 0.978 (0.978) | [0:55:22]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.5061
+Jaccard avg 0.3704
+WCE avg 0.1357
+Acc avg 0.965
+IoU avg 0.878
+Pre avg 0.959
+Rec avg 0.912
+F1 avg 0.933
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.959
+IoU class 2 [Non-LZ] = 0.797
+2024-06-07 21:01:41
+Lr: 8.819e-03 | Epoch: [62][0/80] | Time 1.425 (0.953) | Data 0.514 (0.012) | Loss 4.0116 (4.0116) | Bd 2.6672 (2.6672) | acc 0.964 (0.964) | IoU 0.930 (0.930) | [0:53:56]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.5453
+Jaccard avg 0.3813
+WCE avg 0.1640
+Acc avg 0.964
+IoU avg 0.877
+Pre avg 0.957
+Rec avg 0.911
+F1 avg 0.932
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.958
+IoU class 2 [Non-LZ] = 0.795
+2024-06-07 21:03:06
+Lr: 8.606e-03 | Epoch: [63][0/80] | Time 1.437 (0.953) | Data 0.519 (0.012) | Loss 3.8560 (3.8560) | Bd 2.7172 (2.7172) | acc 0.974 (0.974) | IoU 0.949 (0.949) | [0:52:32]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.5457
+Jaccard avg 0.3857
+WCE avg 0.1600
+Acc avg 0.964
+IoU avg 0.876
+Pre avg 0.956
+Rec avg 0.912
+F1 avg 0.932
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.958
+IoU class 2 [Non-LZ] = 0.794
+2024-06-07 21:04:31
+Lr: 8.378e-03 | Epoch: [64][0/80] | Time 1.358 (0.953) | Data 0.478 (0.012) | Loss 3.5098 (3.5098) | Bd 2.6286 (2.6286) | acc 0.978 (0.978) | IoU 0.955 (0.955) | [0:51:07]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4696
+Jaccard avg 0.3316
+WCE avg 0.1380
+Acc avg 0.970
+IoU avg 0.895
+Pre avg 0.968
+Rec avg 0.923
+F1 avg 0.943
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.965
+IoU class 2 [Non-LZ] = 0.825
+2024-06-07 21:05:56
+Lr: 8.136e-03 | Epoch: [65][0/80] | Time 1.420 (0.953) | Data 0.473 (0.012) | Loss 3.4150 (3.4150) | Bd 2.6333 (2.6333) | acc 0.978 (0.978) | IoU 0.949 (0.949) | [0:49:42]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4982
+Jaccard avg 0.3580
+WCE avg 0.1401
+Acc avg 0.967
+IoU avg 0.886
+Pre avg 0.965
+Rec avg 0.915
+F1 avg 0.938
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.962
+IoU class 2 [Non-LZ] = 0.810
+2024-06-07 21:07:20
+Lr: 7.882e-03 | Epoch: [66][0/80] | Time 1.346 (0.953) | Data 0.487 (0.012) | Loss 2.8432 (2.8432) | Bd 2.5132 (2.5132) | acc 0.995 (0.995) | IoU 0.989 (0.989) | [0:48:16]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.5586
+Jaccard avg 0.4001
+WCE avg 0.1584
+Acc avg 0.964
+IoU avg 0.874
+Pre avg 0.965
+Rec avg 0.903
+F1 avg 0.931
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.958
+IoU class 2 [Non-LZ] = 0.790
+2024-06-07 21:08:45
+Lr: 7.616e-03 | Epoch: [67][0/80] | Time 1.475 (0.953) | Data 0.546 (0.012) | Loss 3.7117 (3.7117) | Bd 2.3938 (2.3938) | acc 0.970 (0.970) | IoU 0.923 (0.923) | [0:46:51]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4605
+Jaccard avg 0.3327
+WCE avg 0.1278
+Acc avg 0.965
+IoU avg 0.882
+Pre avg 0.950
+Rec avg 0.922
+F1 avg 0.935
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.959
+IoU class 2 [Non-LZ] = 0.804
+2024-06-07 21:10:11
+Lr: 7.340e-03 | Epoch: [68][0/80] | Time 1.462 (0.953) | Data 0.497 (0.012) | Loss 3.1429 (3.1429) | Bd 2.5389 (2.5389) | acc 0.989 (0.989) | IoU 0.963 (0.963) | [0:45:26]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.5482
+Jaccard avg 0.3927
+WCE avg 0.1555
+Acc avg 0.963
+IoU avg 0.873
+Pre avg 0.964
+Rec avg 0.903
+F1 avg 0.930
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.958
+IoU class 2 [Non-LZ] = 0.788
+2024-06-07 21:11:35
+Lr: 7.054e-03 | Epoch: [69][0/80] | Time 1.315 (0.953) | Data 0.466 (0.012) | Loss 3.3788 (3.3788) | Bd 2.4479 (2.4479) | acc 0.984 (0.984) | IoU 0.967 (0.967) | [0:44:01]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4348
+Jaccard avg 0.3148
+WCE avg 0.1200
+Acc avg 0.971
+IoU avg 0.898
+Pre avg 0.964
+Rec avg 0.929
+F1 avg 0.945
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.966
+IoU class 2 [Non-LZ] = 0.831
+2024-06-07 21:13:01
+Lr: 6.760e-03 | Epoch: [70][0/80] | Time 1.412 (0.953) | Data 0.512 (0.012) | Loss 2.9920 (2.9920) | Bd 2.4748 (2.4748) | acc 0.990 (0.990) | IoU 0.977 (0.977) | [0:42:36]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.5712
+Jaccard avg 0.4032
+WCE avg 0.1680
+Acc avg 0.962
+IoU avg 0.867
+Pre avg 0.971
+Rec avg 0.892
+F1 avg 0.926
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.956
+IoU class 2 [Non-LZ] = 0.777
+2024-06-07 21:14:25
+Lr: 6.458e-03 | Epoch: [71][0/80] | Time 1.464 (0.953) | Data 0.520 (0.012) | Loss 2.9654 (2.9654) | Bd 2.4144 (2.4144) | acc 0.988 (0.988) | IoU 0.974 (0.974) | [0:41:10]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4569
+Jaccard avg 0.3198
+WCE avg 0.1370
+Acc avg 0.972
+IoU avg 0.901
+Pre avg 0.970
+Rec avg 0.927
+F1 avg 0.947
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.967
+IoU class 2 [Non-LZ] = 0.835
+2024-06-07 21:15:50
+Lr: 6.151e-03 | Epoch: [72][0/80] | Time 1.684 (0.953) | Data 0.517 (0.012) | Loss 2.8426 (2.8426) | Bd 2.3781 (2.3781) | acc 0.992 (0.992) | IoU 0.975 (0.975) | [0:39:45]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4643
+Jaccard avg 0.3298
+WCE avg 0.1345
+Acc avg 0.970
+IoU avg 0.896
+Pre avg 0.971
+Rec avg 0.920
+F1 avg 0.944
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.965
+IoU class 2 [Non-LZ] = 0.826
+2024-06-07 21:17:15
+Lr: 5.840e-03 | Epoch: [73][0/80] | Time 1.503 (0.953) | Data 0.477 (0.012) | Loss 5.4780 (5.4780) | Bd 2.6793 (2.6793) | acc 0.970 (0.970) | IoU 0.700 (0.700) | [0:38:20]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.5334
+Jaccard avg 0.3780
+WCE avg 0.1555
+Acc avg 0.967
+IoU avg 0.883
+Pre avg 0.968
+Rec avg 0.910
+F1 avg 0.936
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.961
+IoU class 2 [Non-LZ] = 0.805
+2024-06-07 21:18:41
+Lr: 5.525e-03 | Epoch: [74][0/80] | Time 1.364 (0.954) | Data 0.473 (0.012) | Loss 3.4123 (3.4123) | Bd 2.4436 (2.4436) | acc 0.979 (0.979) | IoU 0.949 (0.949) | [0:36:55]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4146
+Jaccard avg 0.2906
+WCE avg 0.1240
+Acc avg 0.975
+IoU avg 0.911
+Pre avg 0.973
+Rec avg 0.935
+F1 avg 0.953
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.970
+IoU class 2 [Non-LZ] = 0.853
+Best mean iou in validation so far, save model!
+2024-06-07 21:20:06
+Lr: 5.209e-03 | Epoch: [75][0/80] | Time 1.346 (0.953) | Data 0.530 (0.012) | Loss 3.5750 (3.5750) | Bd 2.4958 (2.4958) | acc 0.978 (0.978) | IoU 0.957 (0.957) | [0:35:30]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4097
+Jaccard avg 0.2884
+WCE avg 0.1214
+Acc avg 0.975
+IoU avg 0.912
+Pre avg 0.974
+Rec avg 0.934
+F1 avg 0.953
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.971
+IoU class 2 [Non-LZ] = 0.853
+Best mean iou in validation so far, save model!
+2024-06-07 21:21:31
+Lr: 4.891e-03 | Epoch: [76][0/80] | Time 1.387 (0.953) | Data 0.549 (0.012) | Loss 2.9726 (2.9726) | Bd 2.4203 (2.4203) | acc 0.991 (0.991) | IoU 0.981 (0.981) | [0:34:05]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3545
+Jaccard avg 0.2617
+WCE avg 0.0928
+Acc avg 0.977
+IoU avg 0.920
+Pre avg 0.973
+Rec avg 0.944
+F1 avg 0.958
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.973
+IoU class 2 [Non-LZ] = 0.867
+Best mean iou in validation so far, save model!
+2024-06-07 21:22:56
+Lr: 4.575e-03 | Epoch: [77][0/80] | Time 1.512 (0.953) | Data 0.517 (0.012) | Loss 3.0013 (3.0013) | Bd 2.4893 (2.4893) | acc 0.993 (0.993) | IoU 0.986 (0.986) | [0:32:40]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4362
+Jaccard avg 0.3016
+WCE avg 0.1346
+Acc avg 0.974
+IoU avg 0.908
+Pre avg 0.977
+Rec avg 0.929
+F1 avg 0.951
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.969
+IoU class 2 [Non-LZ] = 0.846
+2024-06-07 21:24:21
+Lr: 4.260e-03 | Epoch: [78][0/80] | Time 1.547 (0.953) | Data 0.465 (0.012) | Loss 3.8901 (3.8901) | Bd 2.5350 (2.5350) | acc 0.975 (0.975) | IoU 0.921 (0.921) | [0:31:14]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4274
+Jaccard avg 0.3054
+WCE avg 0.1220
+Acc avg 0.974
+IoU avg 0.909
+Pre avg 0.975
+Rec avg 0.931
+F1 avg 0.951
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.970
+IoU class 2 [Non-LZ] = 0.848
+2024-06-07 21:25:48
+Lr: 3.949e-03 | Epoch: [79][0/80] | Time 1.456 (0.954) | Data 0.501 (0.012) | Loss 3.1019 (3.1019) | Bd 2.3988 (2.3988) | acc 0.988 (0.988) | IoU 0.976 (0.976) | [0:29:50]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4090
+Jaccard avg 0.2930
+WCE avg 0.1160
+Acc avg 0.974
+IoU avg 0.910
+Pre avg 0.972
+Rec avg 0.934
+F1 avg 0.952
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.970
+IoU class 2 [Non-LZ] = 0.850
+2024-06-07 21:27:13
+Lr: 3.642e-03 | Epoch: [80][0/80] | Time 1.330 (0.954) | Data 0.476 (0.012) | Loss 2.9349 (2.9349) | Bd 2.5003 (2.5003) | acc 0.994 (0.994) | IoU 0.988 (0.988) | [0:28:23]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3898
+Jaccard avg 0.2811
+WCE avg 0.1087
+Acc avg 0.975
+IoU avg 0.913
+Pre avg 0.972
+Rec avg 0.938
+F1 avg 0.954
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.971
+IoU class 2 [Non-LZ] = 0.856
+2024-06-07 21:28:38
+Lr: 3.340e-03 | Epoch: [81][0/80] | Time 1.288 (0.954) | Data 0.468 (0.012) | Loss 2.8034 (2.8034) | Bd 2.4901 (2.4901) | acc 0.996 (0.996) | IoU 0.992 (0.992) | [0:26:58]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4209
+Jaccard avg 0.3012
+WCE avg 0.1197
+Acc avg 0.972
+IoU avg 0.902
+Pre avg 0.968
+Rec avg 0.929
+F1 avg 0.947
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.967
+IoU class 2 [Non-LZ] = 0.836
+2024-06-07 21:30:03
+Lr: 3.046e-03 | Epoch: [82][0/80] | Time 1.408 (0.954) | Data 0.514 (0.012) | Loss 2.7677 (2.7677) | Bd 2.2762 (2.2762) | acc 0.993 (0.993) | IoU 0.982 (0.982) | [0:25:33]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3768
+Jaccard avg 0.2742
+WCE avg 0.1026
+Acc avg 0.976
+IoU avg 0.917
+Pre avg 0.974
+Rec avg 0.940
+F1 avg 0.956
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.972
+IoU class 2 [Non-LZ] = 0.862
+2024-06-07 21:31:29
+Lr: 2.760e-03 | Epoch: [83][0/80] | Time 1.529 (0.954) | Data 0.505 (0.012) | Loss 2.9708 (2.9708) | Bd 2.4469 (2.4469) | acc 0.993 (0.993) | IoU 0.986 (0.986) | [0:24:08]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3709
+Jaccard avg 0.2653
+WCE avg 0.1056
+Acc avg 0.975
+IoU avg 0.914
+Pre avg 0.966
+Rec avg 0.943
+F1 avg 0.954
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.971
+IoU class 2 [Non-LZ] = 0.857
+2024-06-07 21:32:55
+Lr: 2.484e-03 | Epoch: [84][0/80] | Time 1.401 (0.954) | Data 0.450 (0.012) | Loss 2.9833 (2.9833) | Bd 2.4444 (2.4444) | acc 0.991 (0.991) | IoU 0.979 (0.979) | [0:22:43]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4325
+Jaccard avg 0.3032
+WCE avg 0.1292
+Acc avg 0.973
+IoU avg 0.906
+Pre avg 0.974
+Rec avg 0.928
+F1 avg 0.949
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.969
+IoU class 2 [Non-LZ] = 0.843
+2024-06-07 21:34:19
+Lr: 2.218e-03 | Epoch: [85][0/80] | Time 1.569 (0.954) | Data 0.575 (0.012) | Loss 2.8981 (2.8981) | Bd 2.4189 (2.4189) | acc 0.994 (0.994) | IoU 0.987 (0.987) | [0:21:18]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.4098
+Jaccard avg 0.2938
+WCE avg 0.1160
+Acc avg 0.974
+IoU avg 0.909
+Pre avg 0.974
+Rec avg 0.932
+F1 avg 0.951
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.970
+IoU class 2 [Non-LZ] = 0.848
+2024-06-07 21:35:46
+Lr: 1.964e-03 | Epoch: [86][0/80] | Time 1.541 (0.954) | Data 0.551 (0.012) | Loss 2.9467 (2.9467) | Bd 2.3451 (2.3451) | acc 0.989 (0.989) | IoU 0.977 (0.977) | [0:19:53]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3475
+Jaccard avg 0.2483
+WCE avg 0.0992
+Acc avg 0.978
+IoU avg 0.924
+Pre avg 0.974
+Rec avg 0.946
+F1 avg 0.960
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.974
+IoU class 2 [Non-LZ] = 0.873
+Best mean iou in validation so far, save model!
+2024-06-07 21:37:12
+Lr: 1.722e-03 | Epoch: [87][0/80] | Time 1.397 (0.955) | Data 0.466 (0.012) | Loss 3.3307 (3.3307) | Bd 2.3856 (2.3856) | acc 0.984 (0.984) | IoU 0.956 (0.956) | [0:18:28]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3808
+Jaccard avg 0.2716
+WCE avg 0.1091
+Acc avg 0.976
+IoU avg 0.917
+Pre avg 0.976
+Rec avg 0.939
+F1 avg 0.956
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.972
+IoU class 2 [Non-LZ] = 0.862
+2024-06-07 21:38:37
+Lr: 1.494e-03 | Epoch: [88][0/80] | Time 1.362 (0.955) | Data 0.530 (0.012) | Loss 2.7815 (2.7815) | Bd 2.3946 (2.3946) | acc 0.996 (0.996) | IoU 0.992 (0.992) | [0:17:02]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3462
+Jaccard avg 0.2506
+WCE avg 0.0956
+Acc avg 0.978
+IoU avg 0.925
+Pre avg 0.975
+Rec avg 0.947
+F1 avg 0.960
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.975
+IoU class 2 [Non-LZ] = 0.875
+Best mean iou in validation so far, save model!
+2024-06-07 21:40:01
+Lr: 1.281e-03 | Epoch: [89][0/80] | Time 1.373 (0.954) | Data 0.528 (0.012) | Loss 2.7417 (2.7417) | Bd 2.3931 (2.3931) | acc 0.997 (0.997) | IoU 0.994 (0.994) | [0:15:37]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3170
+Jaccard avg 0.2328
+WCE avg 0.0842
+Acc avg 0.980
+IoU avg 0.931
+Pre avg 0.976
+Rec avg 0.952
+F1 avg 0.964
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.977
+IoU class 2 [Non-LZ] = 0.885
+Best mean iou in validation so far, save model!
+2024-06-07 21:41:26
+Lr: 1.083e-03 | Epoch: [90][0/80] | Time 1.408 (0.954) | Data 0.490 (0.012) | Loss 2.9886 (2.9886) | Bd 2.4310 (2.4310) | acc 0.995 (0.995) | IoU 0.987 (0.987) | [0:14:12]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3288
+Jaccard avg 0.2387
+WCE avg 0.0901
+Acc avg 0.979
+IoU avg 0.927
+Pre avg 0.975
+Rec avg 0.950
+F1 avg 0.962
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.975
+IoU class 2 [Non-LZ] = 0.879
+2024-06-07 21:42:51
+Lr: 9.015e-04 | Epoch: [91][0/80] | Time 1.474 (0.954) | Data 0.486 (0.012) | Loss 3.1189 (3.1189) | Bd 2.3900 (2.3900) | acc 0.990 (0.990) | IoU 0.972 (0.972) | [0:12:46]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3105
+Jaccard avg 0.2274
+WCE avg 0.0831
+Acc avg 0.981
+IoU avg 0.933
+Pre avg 0.975
+Rec avg 0.956
+F1 avg 0.965
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.977
+IoU class 2 [Non-LZ] = 0.889
+Best mean iou in validation so far, save model!
+2024-06-07 21:44:15
+Lr: 7.370e-04 | Epoch: [92][0/80] | Time 1.403 (0.954) | Data 0.491 (0.012) | Loss 2.7338 (2.7338) | Bd 2.3556 (2.3556) | acc 0.996 (0.996) | IoU 0.992 (0.992) | [0:11:21]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3041
+Jaccard avg 0.2212
+WCE avg 0.0829
+Acc avg 0.981
+IoU avg 0.934
+Pre avg 0.976
+Rec avg 0.955
+F1 avg 0.965
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.978
+IoU class 2 [Non-LZ] = 0.890
+Best mean iou in validation so far, save model!
+2024-06-07 21:45:40
+Lr: 5.902e-04 | Epoch: [93][0/80] | Time 1.362 (0.954) | Data 0.518 (0.012) | Loss 2.9163 (2.9163) | Bd 2.3907 (2.3907) | acc 0.998 (0.998) | IoU 0.995 (0.995) | [0:09:56]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3964
+Jaccard avg 0.2793
+WCE avg 0.1171
+Acc avg 0.976
+IoU avg 0.916
+Pre avg 0.977
+Rec avg 0.936
+F1 avg 0.955
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.972
+IoU class 2 [Non-LZ] = 0.859
+2024-06-07 21:47:05
+Lr: 4.618e-04 | Epoch: [94][0/80] | Time 1.560 (0.954) | Data 0.477 (0.012) | Loss 2.9000 (2.9000) | Bd 2.5915 (2.5915) | acc 0.996 (0.996) | IoU 0.992 (0.992) | [0:08:30]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3277
+Jaccard avg 0.2361
+WCE avg 0.0916
+Acc avg 0.979
+IoU avg 0.928
+Pre avg 0.975
+Rec avg 0.950
+F1 avg 0.962
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.976
+IoU class 2 [Non-LZ] = 0.880
+2024-06-07 21:48:31
+Lr: 3.522e-04 | Epoch: [95][0/80] | Time 1.443 (0.954) | Data 0.525 (0.012) | Loss 2.9722 (2.9722) | Bd 2.4923 (2.4923) | acc 0.995 (0.995) | IoU 0.989 (0.989) | [0:07:05]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3423
+Jaccard avg 0.2493
+WCE avg 0.0930
+Acc avg 0.979
+IoU avg 0.926
+Pre avg 0.976
+Rec avg 0.947
+F1 avg 0.961
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.975
+IoU class 2 [Non-LZ] = 0.877
+2024-06-07 21:49:56
+Lr: 2.619e-04 | Epoch: [96][0/80] | Time 1.404 (0.954) | Data 0.523 (0.012) | Loss 3.0662 (3.0662) | Bd 2.3541 (2.3541) | acc 0.988 (0.988) | IoU 0.974 (0.974) | [0:05:40]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3868
+Jaccard avg 0.2729
+WCE avg 0.1139
+Acc avg 0.976
+IoU avg 0.916
+Pre avg 0.975
+Rec avg 0.938
+F1 avg 0.955
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.972
+IoU class 2 [Non-LZ] = 0.860
+2024-06-07 21:51:21
+Lr: 1.913e-04 | Epoch: [97][0/80] | Time 1.521 (0.954) | Data 0.477 (0.012) | Loss 2.7661 (2.7661) | Bd 2.3912 (2.3912) | acc 0.996 (0.996) | IoU 0.990 (0.990) | [0:04:14]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3104
+Jaccard avg 0.2282
+WCE avg 0.0822
+Acc avg 0.981
+IoU avg 0.933
+Pre avg 0.977
+Rec avg 0.953
+F1 avg 0.965
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.977
+IoU class 2 [Non-LZ] = 0.888
+2024-06-07 21:52:47
+Lr: 1.406e-04 | Epoch: [98][0/80] | Time 1.606 (0.955) | Data 0.471 (0.012) | Loss 3.0231 (3.0231) | Bd 2.3039 (2.3039) | acc 0.993 (0.993) | IoU 0.964 (0.964) | [0:02:49]
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3407
+Jaccard avg 0.2444
+WCE avg 0.0963
+Acc avg 0.979
+IoU avg 0.926
+Pre avg 0.976
+Rec avg 0.947
+F1 avg 0.961
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.975
+IoU class 2 [Non-LZ] = 0.877
+2024-06-07 21:54:12
+Lr: 1.102e-04 | Epoch: [99][0/80] | Time 1.330 (0.955) | Data 0.473 (0.012) | Loss 2.9537 (2.9537) | Bd 2.2829 (2.2829) | acc 0.992 (0.992) | IoU 0.984 (0.984) | [0:01:24]
+Best mean iou in training set so far, save model!
+Validation set:
+Time avg per batch 0.402
+Loss avg 0.3331
+Jaccard avg 0.2387
+WCE avg 0.0945
+Acc avg 0.979
+IoU avg 0.928
+Pre avg 0.976
+Rec avg 0.949
+F1 avg 0.962
+IoU class 0 [unlabeled] = 0.000
+IoU class 1 [LZ] = 0.976
+IoU class 2 [Non-LZ] = 0.880
+2024-06-07 21:55:38
+2024-06-07 21:55:38
