@@ -1,104 +1,135 @@
-# CENet: Toward Concise and Efficient LiDAR Semantic Segmentation for Autonomous Driving [![arXiv](https://img.shields.io/badge/arXiv-2207.12691-b31b1b?logo=arXiv&logoColor=green)](https://arxiv.org/abs/2207.12691)
+# Projection-Based Artificial Intelligence Safe Landing Zone Detection for Real-Time LiDAR-Navigation Pipelines
 
-Code for our paper:
-> **CENet: Toward Concise and Efficient LiDAR Semantic Segmentation for Autonomous Driving**
-> <br>Huixian Cheng, Xianfeng Han, Guoqiang Xiao<br>
-> Accepted by ICME2022
+## Introduction
+This repository contains the supplementary online materials of our work **Projection-Based Artificial Intelligence Safe Landing Zone Detection for Real-Time LiDAR-Navigation Pipelines**. This work introduces an artificial intelligence (AI)-
+based real-time safe landing zone detection module (LCDM) for vertical take-off and landing (VTOL) navigation. It employs a projection-based point cloud semantic segmentation (PCSS) convolutional neural network (CNN) model combined with point cloud accumulation and a range image generation module. The CNN employed in this study is a customized version of the <a href="https://github.com/huixiancheng/CENet" target="_blank">CENet </a>. The proposed method addresses the limitations of existing projection-based PCSS methods, which often struggle with low-resolution and non-repetitive scan raw light detection and ranging (LiDAR) data commonly found in aerial datasets. The proposed method was developed using three sets of aerial datasets collected from a DJI M600 hexacopter drone, a DJI M300 RTK quadrotor, and a Bell412 helicopter. The proposed LCDM was evaluated using both qualitative and quantitative metrics, demonstrating its robustness and effectiveness. In terms of quantitative results, the proposed method achieved mean intersection over union (mIoU) and accuracy values greater than 0.93 and 98 percent, respectively, across all three datasets, highlighting its accuracy in identifying safe landing zones (LZs). To assess the real-time feasi- bility of the proposed LCDM, it was deployed on a reconfigurable hardware-accelerated module. This setup achieved processing rates higher than 10 Hz for all three datasets and a throughput of over 5 million pts/s on the Jetson AGX Xavier dedicated hardware combined with pytorch tensor RT optimization module. The training and inference processes of the proposed method are shown in Figures 1 and 2.
 
-## Abstract：
-Accurate and fast scene understanding is one of the challenging task for autonomous driving, which requires to take full advantage of LiDAR point clouds for semantic segmentation. 
-In this paper, we present a concise and efficient image-based semantic segmentation network, named CENet. 
-In order to improve the descriptive power of learned features and reduce the computational as well as time complexity, 
-our CENet integrates the convolution with larger kernel size instead of MLP, carefully-selected activation functions, 
-and multiple auxiliary segmentation heads with corresponding loss functions into architecture. 
-Quantitative and qualitative experiments conducted on publicly available benchmarks, SemanticKITTI and SemanticPOSS, 
-demonstrate that our pipeline achieves much better mIoU and inference performance compared with state-of-the-art models.
+For more information about this work, please see our <a href="https://yettobeadded.com" target="_blank">paper</a>.
 
+<p align="center">
+  <img src="images/training process1.png" alt="Training Process" >
+</p>
+<p align="center"><b>Figure 1:</b> Training Process</p>
 
-## Updates:
-**2023-03-28[NEW:sparkles:]** CENet achieves competitive performance in robustness evaluation at SemanticKITTI. See Repo of [Robo3D](https://github.com/ldkong1205/Robo3D) for more details.
-<div align="center">
-  <img src="assert/robustness.png"/>
-</div><br/>
-
-**2022-07-06[:open_mouth::scream::thumbsup:]** [Ph.D. Hou](https://github.com/cardwing) reported an astounding 67.6% mIoU test performance of CENet, see [this issue](https://github.com/huixiancheng/CENet/issues/7) and [PVD Repo](https://github.com/cardwing/Codes-for-PVKD) for details.
-
-**2022-03-28[:sunglasses:]** Suggested by reviewer, renamed to CENet.
-
-**2022-03-07[:yum:]** SENet was very lucky to be ~~provisionally~~ accepted by ICME 2022.
-
-**2021-12-29 [:sunglasses:]** Release models and training logs, which also contains ablation studies. (Please note that due to multiple updates of the code, some models and configs have inconsistencies that lead to errors, please make corresponding changes according to the specific situation.)
-
-## Prepare:
-Download SemanticKITTI from [official web](http://www.semantic-kitti.org/dataset.html). Download SemanticPOSS from [official web](http://www.poss.pku.edu.cn./download.html).
-
-## Usage：
-### Train：
-- SemanticKITTI:
-
-    `python train.py -d /your_dataset -ac config/arch/senet-512.yml -n senet-512`
-
-    Note that the following training strategy is used due to GPU and time constraints, see [kitti.sh](https://github.com/huixiancheng/SENet/blob/main/kitti.sh) for details.
-
-    First train the model with 64x512 inputs. Then load the pre-trained model to train the model with 64x1024 inputs, and finally load the pre-trained model to train the model with 64x2048 inputs.
-    
-    Also, for this reason, if you want to resume training from a breakpoint, uncomment [this section](https://github.com/huixiancheng/SENet/blob/c5827853ee32660ad9487a679890822ac9bf8bf8/modules/trainer.py#L193-L203) and change "/SENet_valid_best" to "/SENet".
-
-- SemanticPOSS:
-
-    `python train_poss.py -d /your_dataset -ac config/arch/poss.yml -n res`
-
-### Infer and Eval：
-- SemanticKITTI:
-
-    `python infer.py -d /your_dataset -l /your_predictions_path -m trained_model -s valid/test`
-    
-    Eval for valid sequences:
-
-    `python evaluate_iou.py -d /your_dataset -p /your_predictions_path`
-
-    For test  sequences, need to upload to [CodaLab](https://competitions.codalab.org/competitions/20331#participate) pages.
-
-- SemanticPOSS:
-
-    `python infer_poss.py -d /your_dataset -l /your_predictions_path -m trained_model`
-
-    This will generate both predictions and mIoU results.
-
-### Visualize Example:
+<p align="center">
+  <img src="images/inference.png" alt="Inference Process" width="890">
+</p>
+<p align="center"><b>Figure 2:</b> Inference Process</p>
 
 
-- Visualize GT:
 
-  `python visualize.py -w kitti/poss -d /your_dataset -s what_sequences`
+This repository contains the following:
 
-- Visualize Predictions:
+1. Inference code
+2. <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank">Link </a> to the weight files of the trained GAN models
+3. <a href="https://drive.google.com/drive/folders/1PJK-v1QC7MsHdm0dEV_PRicn9LlXuLf2?usp=sharing" target="_blank">Link </a> to sample test data
 
-  `python visualize.py -w kitti/poss -d /your_dataset -p /your_predictions -s what_sequences`
+## Instructions to run the code and obtain results
+
+This code is tested in Compute Canada Cloud computers with a A100 GPU, 12GB RAM and Python 3.10
+1. Clone this repository using ```https://github.com/nira16herath/CENet-LZ-detection.git``` or download the repository manually to your computer
+3. Install the required modules using,
+  ```pip install opencv pyyaml torch matplotlib tensorboard tqdm scikit-build scipy torchvision pandas scikit-learn```
+   We suggest you create a separate environment with Python 3.10 to install the modules.
+6. Download the <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank"> trained CNN models </a> and  <a href="https://drive.google.com/drive/folders/1PJK-v1QC7MsHdm0dEV_PRicn9LlXuLf2?usp=sharing" target="_blank">sample test data </a> from the links and include them in the home directory. A sample folder structure for trained CNN models and test data is shown below.
+
+```
+CENet-LZ-detection/ 
+├── README.md
+├── assert/
+├── common/
+├── config/
+├── dataset/
+├── images/
+├── modules/
+├── postproc/
+├── 𝘁𝗿𝗮𝗶𝗻𝗲𝗱_𝗺𝗼𝗱𝗲𝗹𝘀               
+│ ├── test_300by300_bell_lighthouse/                 
+│ ├── test_300by300_hkairport02_amtown03/
+│ ├── test_300by300_mars/
+├── 𝘁𝗲𝘀𝘁_𝗱𝗮𝘁𝗮𝘀𝗲𝘁𝘀               
+│ ├── bell-lighthouse/                 
+│ ├── holyrood-paradise/
+│ ├── mars/          
+├── infer.py          
+└── plot_results.py    
+```
+
+Each test dataset in **test_datasets** folder has the following folder structure. Here **bell-lighthouse** is taken as an example. Here the test data is stored under the sequence **01**. Sequences **00** and **02** are train and valid sequences which contain some dummy ```.bin``` and ```.labels```. These dummy files are included to make sure that no error shown up due to missing training and valid sequences.
+
+```
+test_datasets               
+├── bell-lighthouse/
+│ ├── sequences/                 
+│ │ ├── 00/
+│ │ │ ├── labels/
+│ │ │ │ ├── *.label
+│ │ │ ├── velodyne/
+│ │ │ │ ├── *.bin
+│ │ ├── 01/
+│ │ │ ├── labels/
+│ │ │ │ ├── *.label      #ground truth labels
+│ │ │ ├── velodyne/
+│ │ │ │ ├── *.bin        #test LiDAR scans
+│ │ ├── 02/
+│ │ │ ├── labels/
+│ │ │ │ ├── *.label
+│ │ │ ├── velodyne/
+│ │ │ │ ├── *.bin
+```
+
+5. Once the **trained_models** and **test_datasets** folders are properly placed, create a folder named **test_results** in home directory of the repository. Then run this code in the home directory of the repository to get the predictions for test LiDAR scans in sequence **01** of a given dataset.
+
+```
+python infer.py -d "path_to_test_dataset" -l "path_to_save_predictions" -m "path_to_trained_model" -s test
+```
+Example: bell-lighthouse dataset
+
+```
+python infer.py -d "test_datasets/bell-lighthouse" -l "test_results/bell-lighthouse" -m "trained_models/test_300by300_bell_lighthouse" -s test
+```
+
+The predictions will be saved in **predictions** folder as shown in the following folder structure,
+```
+test_results             
+├── bell-lighthouse/
+│ ├── sequences/   
+│ │ ├── 00/
+│ │ ├── 01/
+│ │ │ ├── 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻𝘀/
+│ │ │ │ ├── *.label
+│ │ ├── 02/
+```
+
+6. To obtain the orthogonal projected images of ground truths and predictions run,
+
+```
+python plot_results.py -p "path_to_predictions" -g "path_to_groundtruths" -m "path_to_trained_model"
+```
+Example: bell-lighthouse dataset
+
+```
+python plot_results.py -p "test_results/bell-lighthouse" -g "test_datasets/bell-lighthouse" -m "trained_models/test_300by300_bell_lighthouse"
+```
+
+The images will be saved in **images** folder as shown in the following folder structure,  
+
+```
+test_results             
+├── bell-lighthouse/
+│ ├── sequences/   
+│ │ ├── 00/
+│ │ ├── 01/
+│ │ │ ├── predictions/
+│ │ │ │ ├── *.label
+│ │ │ ├── 𝗶𝗺𝗮𝗴𝗲𝘀/
+│ │ │ │ ├── *_gt.png      
+│ │ │ │ ├── *_pred.png
+│ │ ├── 02/
+```
+
+## Thanks
+
+Special thanks to the developers of <a href="https://github.com/huixiancheng/CENet" target="_blank">CENet</a> for their valuable contributions. Check out their outstanding work on projection-based LiDAR semantic segmentation!
 
 
-## Pretrained Models and Logs:
-| **KITTI Result** | **POSS Result** | **Ablation Study** | **Backbone HarDNet** |
-| ---------------- | --------------- | ------------------ | -------------------- |
-| [Google Drive](https://drive.google.com/file/d/167ofUNdkVnRoqZ28NAXRjykdVWnublUk/view?usp=share_link) | [Google Drive](https://drive.google.com/file/d/1DC66ky6k2aBpVg1Md1AR2tjqHzSYL5xC/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1axrBYJflKMn0FLoC6HoN1G4RUmitIP1U/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1afer0OX0WzxoMIWXV-btGVC7llt-4nUB/view?usp=sharing) |
-
-
-## TODO List:
-- [x] Release Pretrained Model and Logs.
-- [ ] Try TensorRT acceleration.
-- [ ] To make NLA adaptation framework, See [here](https://github.com/huixiancheng/SENet/blob/57d3e07777099c805fa27ceda68e359b2b7ae12d/modules/user.py#L178-L194).
-
-## Acknowledgments：
-Code framework derived from [SalsaNext](https://github.com/Halmstad-University/SalsaNext). Models are heavily based on [FIDNet](https://github.com/placeforyiming/IROS21-FIDNet-SemanticKITTI). Part of code from [SqueezeSegV3](https://github.com/chenfengxu714/SqueezeSegV3). Thanks to their open source code, and also to [Ph.D. Zhao](https://github.com/placeforyiming) for some helpful discussions.
-
-## Citation：
-~~~
-@inproceedings{cheng2022cenet,
-  title={Cenet: Toward Concise and Efficient Lidar Semantic Segmentation for Autonomous Driving},
-  author={Cheng, Hui--Xian and Han, Xian--Feng and Xiao, Guo--Qiang},
-  booktitle={2022 IEEE International Conference on Multimedia and Expo (ICME)},
-  pages={01--06},
-  year={2022},
-  organization={IEEE}
-}
-~~~
