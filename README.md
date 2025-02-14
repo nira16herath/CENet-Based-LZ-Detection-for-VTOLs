@@ -26,7 +26,10 @@ This repository contains the following:
 
 ## Sample results
 
-Here are some sample results from our method for three different datasets (MUN-FRL, Holyrood-Paradis, HKU-MARS)
+Here are some sample results from our method for three different datasets,
+1. <a href="https://mars.hku.hk/dataset.html" target="_blank">MUN-FRL</a> 
+2. Holyrood-Paradise
+3. <a href="https://mun-frl-vil-dataset.readthedocs.io/en/latest/" target="_blank">HKU-MARS</a>  
 
 <p align="center">
   <img src="images/bell_light_all.drawio.png" alt="Bell Light" width="30%">
@@ -139,8 +142,13 @@ test_results
 │ │ ├── 02/
 ```
 
-## Thanks
+## Acknowledgement
 
-Special thanks to the developers of <a href="https://github.com/huixiancheng/CENet" target="_blank">CENet</a> for their valuable contributions. Check out their outstanding work on projection-based LiDAR semantic segmentation!
+Special thanks to the developers of, 
+1. <a href="https://github.com/huixiancheng/CENet" target="_blank">CENet</a> for their valuable contributions to projection based LiDAR semantic segmentation,
+2. <a href="https://github.com/jbehley/point_labeler" target="_blank">Point Cloud Labelling Tool </a>  for their wonderful LiDAR point cloud annotation tool.
+3. <a href="https://mun-frl-vil-dataset.readthedocs.io/en/latest/" target="_blank">MUN-FRL</a> and Holyrood-Paradise for their valuable datasets
+3. <a href="https://mars.hku.hk/dataset.html" target="_blank">HKU-MARS</a> dataset for their valuable dataset.
+
 
 
