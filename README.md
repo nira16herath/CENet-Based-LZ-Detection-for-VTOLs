@@ -27,9 +27,9 @@ This repository contains the following:
 ## Sample results
 
 Here are some sample results from our method for three different datasets,
-1. <a href="https://mars.hku.hk/dataset.html" target="_blank">MUN-FRL</a> 
+1. <a href="https://mun-frl-vil-dataset.readthedocs.io/en/latest/" target="_blank">HKU-MARS</a>
 2. Holyrood-Paradise
-3. <a href="https://mun-frl-vil-dataset.readthedocs.io/en/latest/" target="_blank">HKU-MARS</a>  
+3. <a href="https://mars.hku.hk/dataset.html" target="_blank">MUN-FRL</a>
 
 <p align="center">
   <img src="images/bell_light_all.drawio.png" alt="Bell Light" width="30%">
