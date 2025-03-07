@@ -45,18 +45,9 @@ This code is tested in Compute Canada Cloud computers with a A100 GPU, 12GB RAM 
 3. Install the required modules using,
   ```pip install opencv pyyaml torch matplotlib tensorboard tqdm scikit-build scipy torchvision pandas scikit-learn```
    We suggest you create a separate environment with Python 3.10 to install the modules.
-6. Download the <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank"> trained CNN models </a> and  <a href="https://drive.google.com/drive/folders/1PJK-v1QC7MsHdm0dEV_PRicn9LlXuLf2?usp=sharing" target="_blank">sample test data </a> from the links and include them in the home directory. A sample folder structure for trained CNN models and test data is shown below.
+6. Download the <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank"> trained CNN models </a> and  <a href="https://drive.google.com/drive/folders/1PJK-v1QC7MsHdm0dEV_PRicn9LlXuLf2?usp=sharing" target="_blank">sample test data </a> from the links and include them in the home directory. Sample folder structure of trained CNN models and test data is shown below.
 
 ```
-CENet-LZ-detection/ 
-├── README.md
-├── assert/
-├── common/
-├── config/
-├── dataset/
-├── images/
-├── modules/
-├── postproc/
 ├── 𝘁𝗿𝗮𝗶𝗻𝗲𝗱_𝗺𝗼𝗱𝗲𝗹𝘀               
 │ ├── test_300by300_bell_lighthouse/                 
 │ ├── test_300by300_hkairport02_amtown03/
@@ -64,9 +55,7 @@ CENet-LZ-detection/
 ├── 𝘁𝗲𝘀𝘁_𝗱𝗮𝘁𝗮𝘀𝗲𝘁𝘀               
 │ ├── bell-lighthouse/                 
 │ ├── holyrood-paradise/
-│ ├── mars/          
-├── infer.py          
-└── plot_results.py    
+│ ├── mars/            
 ```
 
 Each test dataset in **test_datasets** folder has the following folder structure. Here **bell-lighthouse** is taken as an example. Here the test data is stored under the sequence **01**. Sequences **00** and **02** are train and valid sequences which contain some dummy ```.bin``` and ```.labels```. These dummy files are included to make sure that no error shown up due to missing training and valid sequences.
