@@ -21,7 +21,7 @@ For more information about this work, please see our <a href="https://yettobeadd
 This repository contains the following:
 
 1. Inference code
-2. <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank">Link </a> to the weight files of the trained GAN models
+2. <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank">Link </a> to the weight files of the trained models
 3. <a href="https://drive.google.com/drive/folders/1PJK-v1QC7MsHdm0dEV_PRicn9LlXuLf2?usp=sharing" target="_blank">Link </a> to sample test data
 
 ## Sample results
