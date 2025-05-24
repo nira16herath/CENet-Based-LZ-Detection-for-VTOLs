@@ -43,7 +43,7 @@ Here are some sample results from our method for three different datasets,
 This code is tested in Compute Canada Cloud computers with a A100 GPU, 12GB RAM and Python 3.10
 1. Clone this repository using ```https://github.com/nira16herath/CENet-LZ-detection.git``` or download the repository manually to your computer
 3. Install the required modules using,
-  ```pip install opencv pyyaml torch matplotlib tensorboard tqdm scikit-build scipy torchvision pandas scikit-learn```
+  ```pip install opencv-python pyyaml torch matplotlib tensorboard tqdm scikit-build scipy torchvision pandas scikit-learn```
    We suggest you create a separate environment with Python 3.10 to install the modules.
 6. Download the <a href="https://drive.google.com/drive/folders/1gpsx8NPYSj6ThHN1UBvwB8JkxAnc1Irl?usp=sharing" target="_blank"> trained CNN models </a> and  <a href="https://drive.google.com/drive/folders/1PJK-v1QC7MsHdm0dEV_PRicn9LlXuLf2?usp=sharing" target="_blank">sample test data </a> from the links and include them in the home directory. Sample folder structure of trained CNN models and test data is shown below.
 
